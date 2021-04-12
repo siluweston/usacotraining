@@ -74,7 +74,6 @@ class beads {
             } 
             else if ( !strarr.get(p%size).equals("w") ) 
             {
-     
                 int upperbound = returnBeads( p, intarr, strarr, -1, 3*size )[1];
                 int lowerbound = returnBeads( p, intarr, strarr, -1, 3*size )[2];
                 if ( max < returnBeads( p, intarr, strarr, -1, 3*size )[0] + returnBeads( returnBeads(p, intarr, strarr, -1, 3*size)[1], intarr, strarr, upperbound, lowerbound+size )[0] )
